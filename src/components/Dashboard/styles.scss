@@ -1,0 +1,16 @@
+.dashboard {
+  margin: 20px 50px;
+
+  .title-dashboard {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+}

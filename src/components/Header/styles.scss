@@ -1,0 +1,43 @@
+$menuColor: #131b37;
+$letterColor: rgba(255, 255, 255, 0.9);
+
+.header {
+  background-color: $menuColor;
+  color: $letterColor;
+  display: flex;
+  height: 10vh;
+  align-items: center;
+  justify-content: space-between;
+
+  div {
+    margin-left: 5%;
+  }
+
+  ul {
+    list-style-type: none;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    li {
+      height: 100%;
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: $letterColor;
+        height: 100%;
+        transition: all 0.5s;
+
+        &:hover {
+          background-color: $letterColor;
+          color: $menuColor
+        }
+      }
+    }
+  }
+}
