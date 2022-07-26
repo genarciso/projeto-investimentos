@@ -1,13 +1,10 @@
 import './App.scss'
-import Dashboard from "./components/Dashboard";
-import Header from "./components/Header";
+import {Main} from "./pages/Main";
 
 function App() {
   return (
     <div className="App">
-        <Dashboard>
-            <Header></Header>
-        </Dashboard>
+        <Main></Main>
     </div>
   )
 }

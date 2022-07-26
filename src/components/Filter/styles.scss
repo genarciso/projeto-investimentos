@@ -1,0 +1,41 @@
+@use "../Header/styles" as headerStyle;
+$filterLetterColor: #595757;
+
+@mixin btn {
+  height: 100%;
+  width: 35%;
+  padding: 10px;
+  border-radius: 20px;
+  border: rgba(139, 139, 173, 0.35) solid 1px;
+  box-shadow: 0 0 1px #131b37;
+  font-weight: bold;
+  background-color: headerStyle.$letterColor;
+  color: $filterLetterColor;
+
+
+  .selected {
+    background-color: headerStyle.$letterColor;
+    color: headerStyle.$menuColor
+  }
+  &:hover {
+    color: headerStyle.$letterColor;
+    background-color: headerStyle.$menuColor;
+  }
+
+}
+
+.filter {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: $filterLetterColor;
+  .btnHigh {
+    @include btn;
+  }
+  .btnLow {
+    @include btn;
+  }
+
+}

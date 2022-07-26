@@ -2,6 +2,7 @@
   margin: 20px 50px;
 
   .title-dashboard {
+    height: 40px;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -9,7 +10,7 @@
 
   .cards {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: space-between;
   }
 

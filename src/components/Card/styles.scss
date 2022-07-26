@@ -1,10 +1,22 @@
 .card {
-  width: 40vw;
+  width: 41vw;
   height: 60vh;
 
   display: flex;
-  flex-direction: column;
+  flex-flow: row wrap;
   align-items: center;
+  justify-content: space-between;
 
+  border: rgba(139, 139, 173, 0.35) solid 1px;
+  border-radius: 5px;
+  box-shadow: 0 0 1px #131b37;
   margin: 20px 0;
+
+  .titleCard {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

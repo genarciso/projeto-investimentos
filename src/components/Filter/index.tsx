@@ -1,10 +1,10 @@
 import "./styles.scss"
 const Filter = () => {
     return (
-        <div>
-            <span>Ordenar: </span>
-            <button>Em alta</button>
-            <button>Em baixa</button>
+        <div className="filter">
+            <span className="order">Ordenar: </span>
+            <button className="btnHigh">Em alta</button>
+            <button className="btnLow">Em baixa</button>
         </div>
 
     )

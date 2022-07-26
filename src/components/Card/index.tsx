@@ -4,8 +4,8 @@ import Chart from "../Chart";
 const Card = () => {
     return (
         <div className="card">
-            <strong>Card</strong>
-            <Chart ></Chart>
+            <strong className="titleCard">Card PI PIPIP IPOP OPOPO</strong>
+            <Chart className="chartCard"></Chart>
         </div>
 
     )

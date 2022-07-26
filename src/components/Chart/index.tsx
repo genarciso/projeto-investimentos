@@ -1,28 +1,33 @@
 import "./styles.scss"
 import Highcharts from 'highcharts';
 import HighchartsReact from "highcharts-react-official";
-import {useRef} from "react";
-
-const options: Highcharts.Options = {
-    title: {
-        text: ''
-    },
-    series: [{
-        type: 'line',
-        data: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    }]
-};
+import {useState} from "react";
 
 const Chart = (props: HighchartsReact.Props) => {
-    const chartComponentRef = useRef<HighchartsReact.RefObject>(null);
+    const [chartOptions, setChartOptions] = useState<Highcharts.Options>({
+        title: {
+            text: ''
+        },
+        yAxis: {
+            title: ''
+        },
+        xAxis: {
+            categories: ['A', 'B', 'C'],
+        },
+        series: [
+            { data: [1, 2, 3] }
+        ],
+
+    } as Highcharts.Options);
 
     return (
-        <HighchartsReact
-            highcharts={Highcharts}
-            options={options}
-            ref={chartComponentRef}
-            {...props}
-        />
+        <div className="chart">
+            <HighchartsReact
+                highcharts={Highcharts}
+                options={chartOptions}
+                {...props}
+            />
+        </div>
     );
 }
 

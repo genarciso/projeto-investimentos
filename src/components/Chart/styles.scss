@@ -1,2 +1,15 @@
 .chart {
+  display: block;
+  width: 40vw;
+  height: 50vh;
+
+  .highcharts-container {
+    height: 50vh !important;
+  }
+  .highcharts-root {
+    height: 50vh !important;
+  }
+  .highcharts-background {
+    height: 50vh !important;
+  }
 }
