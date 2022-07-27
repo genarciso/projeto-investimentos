@@ -1,11 +1,18 @@
 import "./styles.scss"
 import Chart from "../Chart";
+import {IExchange} from "../../models/IExchange";
 
-const Card = () => {
+interface ICard {
+    exchange: IExchange
+}
+
+const Card = ( props: ICard ) => {
     return (
         <div className="card">
-            <strong className="titleCard">Card PI PIPIP IPOP OPOPO</strong>
-            <Chart className="chartCard"></Chart>
+            <strong className="titleCard">
+                { `${props.exchange.name} - ${props.exchange.tag}` }
+            </strong>
+            <Chart className="chartCard" exchange={props.exchange} ></Chart>
         </div>
 
     )

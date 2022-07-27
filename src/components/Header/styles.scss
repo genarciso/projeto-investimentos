@@ -22,7 +22,7 @@ $letterColor: rgba(255, 255, 255, 0.9);
     justify-content: space-around;
 
     li {
-      width: 45%;
+      width: 50%;
       height: 100%;
 
       a {
@@ -40,5 +40,9 @@ $letterColor: rgba(255, 255, 255, 0.9);
         }
       }
     }
+  }
+  .selected {
+    background-color: $letterColor;
+    color: $menuColor
   }
 }

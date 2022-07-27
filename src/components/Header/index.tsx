@@ -1,4 +1,5 @@
 import "./styles.scss"
+import {Link} from "react-router-dom";
 
 const Header = () => {
     return (
@@ -8,8 +9,8 @@ const Header = () => {
                     Logo
                 </div>
                 <ul>
-                    <li><a href="#">Dashboard</a></li>
-                    <li><a href="#">Sobre</a></li>
+                    <li><Link to="/">Dashboard</Link></li>
+                    <li><Link to="/about">Sobre</Link></li>
                 </ul>
             </nav>
         </header>
